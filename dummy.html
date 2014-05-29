@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethereum web wallet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="mywallet">
+                <div class="coinbase-container">My wallet address: <span class="coinbase"></span></div>
+                <div class="balance-container">My balance: <span class="balance"></span></div>
+            </div>
+            <div class='transactcontainer'>
+                <div>Send ether</div>
+                <div class="sum">Sum: <input type="text" name="value" id="value"/></div>
+                <div class="destination">To: <input type="text" title="Gav's address" name="destination" value="91a10664d0cd489085a7a018beb5245d4f2272f1" id="destination"/></div>
+                <div class="button"><button id="sendbtn">Send!</button></div>
+            </div>
+            <div class="status">
+                <div>Status</div>
+                <div class="mining">Mining: <span>false</span></div>
+                <div class="listening">Listening: <span>false</span></div>
+            </div>
+        </div>
+        <script>
+            var JSON_RPC_SERVER = 'http://lb-dev-ethjsonrpc-888151941.eu-west-1.elb.amazonaws.com';
+        </script>
+        <script src="js/BigInteger.js" type="text/javascript"></script>
+        <script src="js/ethString.js" type="text/javascript"></script>
+        <script src="js/eth.js" type="text/javascript"></script>
+        <script src="jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
