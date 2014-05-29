@@ -11,6 +11,7 @@ overflow: hidden;
     height: 80%;
     background: #f1f1f1;
     position: relative;
+    -webkit-perspective: 400px;
     margin: 0 auto;
 }
 

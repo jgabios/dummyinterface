@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Ethereum web wallet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
         <div class="container">
-            <div class="bg"></div>
-            <div class="list mywallet" style="left: 10%;">
-                <div class="header">My Wallets</div>
-                <div class="kid balance" style="top: 10%;left: 10%;">window 1</div>
-                <div class="kid" style="top: 10%;left: 60%;">window 2</div>
-                <div class="kid" style="top: 60%;left: 10%;">window 3</div>
-                <div class="kid" style="top: 60%;left: 60%;">window 4</div>
-                <div class="closer hidden">X</div>
+            <div class="mywallet">
+                <div class="coinbase-container">My wallet address: <span class="coinbase"></span></div>
+                <div class="balance-container">My balance: <span class="balance"></span></div>
             </div>
-            <div class="list list1" style="left: 60%;">
-                <div class="header">My Friends</div>
-                <div class="kid status" style="top: 10%;left: 10%;">window 1</div>
-                <div class="kid" style="top: 10%;left: 60%;">window 2</div>
-                <div class="kid" style="top: 60%;left: 10%;">window 3</div>
-                <div class="kid" style="top: 60%;left: 60%;">window 4</div>
-                <div class="closer hidden">X</div>
+            <div class='transactcontainer'>
+                <div>Send ether</div>
+                <div class="sum">Sum: <input type="text" name="value" id="value"/></div>
+                <div class="destination">To: <input type="text" title="Gav's address" name="destination" value="91a10664d0cd489085a7a018beb5245d4f2272f1" id="destination"/></div>
+                <div class="button"><button id="sendbtn">Send!</button></div>
             </div>
-            <div class="list list2" style="left: 70%;">
-                <div class="header">Shopping</div>
-                <div class="kid" style="top: 10%;left: 10%;">window 1</div>
-                <div class="kid" style="top: 10%;left: 60%;">window 2</div>
-                <div class="kid" style="top: 60%;left: 10%;">window 3</div>
-                <div class="kid" style="top: 60%;left: 60%;">window 4</div>
-                <div class="closer hidden">X</div>
+            <div class="status">
+                <div>Status</div>
+                <div class="mining">Mining: <span>false</span></div>
+                <div class="listening">Listening: <span>false</span></div>
             </div>
         </div>
+        <script src="BigInteger.js" type="text/javascript"></script>
+        <script src="ethString.js" type="text/javascript"></script>
         <script src="jquery-1.10.2.js" type="text/javascript"></script>
-        <script src="jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
         <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
